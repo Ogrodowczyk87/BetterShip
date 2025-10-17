@@ -5,7 +5,11 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     container: { center: true, padding: "1rem", screens: { lg: "1040px" } },
-    extend: {},
+    extend: {
+      screens: {
+        xs: "320px",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
