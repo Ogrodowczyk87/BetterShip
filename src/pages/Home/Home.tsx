@@ -1,47 +1,43 @@
-import Button from "../../components/Button";
-import FeatureCard from "../../components/FeatureCard";
-
 export default function Home() {
-
-
   return (
-    <section className="py-6 xs:py-8">
-      <h1 className="mt-2 xs:mt-4 text-3xl xs:text-4xl font-extrabold tracking-tight">
-        We build modern web applications. <span className="underline decoration-4">BetterShip</span>
-      </h1>
-
-        <div className="mt-5 flex flex-col xs:flex-row gap-2 xs:gap-3">
-          <Button className="w-full xs:w-auto rounded-2xl px-4 py-3 text-base bg-zinc-900/60 hover:bg-blue-500">Get in touch</Button>
-          <Button className="w-full xs:w-auto rounded-2xl px-4 py-3 text-base border border-zinc-700 bg-zinc-900/60 hover:bg-blue-500">View portfolio</Button>
+    <section className="relative grid gap-8 py-10 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-14">
+      <div>
+        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          We build modern web applications.
+        </h1>
+        <p className="mt-4 max-w-xl text-zinc-400">
+          Get a quote, communicate clearly, and launch with confidence.
+        </p>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <button className="rounded-2xl bg-white/5  hover:bg-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition ">
+            Get a quote
+          </button>
+          <button className="rounded-2xl bg-white/5  hover:bg-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition ">
+            View portfolio
+          </button>
         </div>
+      </div>
 
-        <div className="mt-5 grid grid-cols-1 xs:grid-cols-1 gap-2 xs:gap-3">
-          <FeatureCard
-            icon={
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            }
-            title="Custom Development"
-          />
-          <FeatureCard
-            icon={
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 3v18M3 12h18" />
-              </svg>
-            }
-            title="API Integrations"
-          />
-          <FeatureCard
-            icon={
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5v14" />
-              </svg>
-            }
-            title="Ongoing Maintenance"
-          />
+      <div className="relative">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-black/60 p-4">
+            <div className="mb-3 flex items-center gap-2 text-xs text-zinc-400">
+              <span className="h-2 w-2 rounded-full bg-yellow-400"></span>
+              <span>App.ux</span>
+              <span className="ml-auto">24/100</span>
+            </div>
+
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <button className="rounded-xl bg-white/10 px-4 py-2 text-sm text-white ring-1 ring-white/10 hover:bg-white/15">
+                Learn more
+              </button>
+              <button className="rounded-xl bg-white/10 px-4 py-2 text-sm text-white ring-1 ring-white/10 hover:bg-white/15">
+                Less: more
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
   );
 }
-
