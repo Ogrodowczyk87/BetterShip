@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Services from "../Services/Services";
+
 export default function Home() {
   return (
     <section className="relative grid gap-8 py-10 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-14">
@@ -38,6 +41,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Services />
+      
     </section>
   );
 }

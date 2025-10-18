@@ -1,12 +1,26 @@
+import ServiceCard from "../../components/ServiceCard";
+
 export default function Services() {
   return (
-    <section className="py-8">
-      <h1 className="text-2xl font-bold">Usługi</h1>
-      <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-        <li className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">MVP</li>
-        <li className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">Audyt kodu</li>
-        <li className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">Utrzymanie</li>
-      </ul>
+    <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <ServiceCard
+        icon={<span className="text-lg">🚀</span>}
+        title="MVP Development"
+        desc="Develop core features quickly, iterate fast, and ship."
+        className="min-h-[180px]"
+      />
+      <ServiceCard
+        icon={<span className="text-lg">🧭</span>}
+        title="Audit & Consulting"
+        desc="Architecture reviews, performance tuning, and guidance."
+        className="min-h-[180px]"
+      />
+      <ServiceCard
+        icon={<span className="text-lg">🛡️</span>}
+        title="Maintenance & Support"
+        desc="Proactive monitoring, updates, and long-term care."
+        className="min-h-[180px]"
+      />
     </section>
   );
 }

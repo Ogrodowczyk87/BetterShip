@@ -50,7 +50,7 @@ export default function MainLayout() {
       </header>
 
       <main className="container py-6 mx-auto">
-        <Outlet />
+        <Outlet />       
       </main>
 
       <footer className="container py-10 text-sm text-slate-500">
