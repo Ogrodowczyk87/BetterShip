@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-secondary shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold">Brand</div>
+        <div className="text-2xl font-bold">BETTERSHIP</div>
         <nav className="space-x-4 hidden md:flex">
           <a href="#services" className="text-gray-600 hover:text-gray-900">Services</a>
           <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
