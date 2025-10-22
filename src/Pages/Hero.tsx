@@ -1,4 +1,6 @@
 import React from 'react'
+import LogoLoop from '../components/LogoLoop'
+
 
 export default function Hero() {
   return (
@@ -12,7 +14,20 @@ export default function Hero() {
         </div>
 
       {/* miejsce na reactbits component logo loop */}
+      <LogoLoop
+        // logos={techLogos}
+        speed={120}
+        direction="left"
+        logoHeight={48}
+        gap={40}
+        pauseOnHover
+        scaleOnHover
+        fadeOut
+        fadeOutColor="#ffffff"
+        ariaLabel="Technology partners"
+      />
+      {/* miejsce na reactbits component logo loop */}
       </div>
+
     </section>
-  )
 }
