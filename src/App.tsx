@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Pages/Header'
 import Hero from './Pages/Hero'
 import Partners from './components/Partners'
-import Services from './components/Services'
+import Services from './Pages/Services'
 import Features from './components/Features'
 import Testimonial from './components/Testimonial'
 import Portfolio from './components/Portfolio'
@@ -15,8 +15,8 @@ export default function App() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Partners />
         <Services />
+        <Partners />
         <Features />
         <Testimonial />
         <Portfolio />

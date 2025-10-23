@@ -17,6 +17,7 @@ export type LogoItem =
       width?: number;
       height?: number;
     };
+    
 
 export interface LogoLoopProps {
   logos: LogoItem[];
