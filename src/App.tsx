@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './Pages/Header'
 import Hero from './Pages/Hero'
-import Partners from './components/Partners'
+import Partners from './Pages/Partners'
 import Services from './Pages/Services'
-import Features from './components/Features'
-import Testimonial from './components/Testimonial'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Features from './Pages/Features'
+import Testimonial from './Pages/Testimonial'
+import Portfolio from './Pages/Portfolio'
+import Contact from './Pages/Contact'
+import Footer from './Pages/Footer'
 
 export default function App() {
   return (
