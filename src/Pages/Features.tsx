@@ -1,4 +1,5 @@
 import React from 'react'
+import IconSVG from '../Assets/check.svg'
 
 export default function Features(){
   return (
@@ -10,7 +11,8 @@ export default function Features(){
             {title:'Accessibility'},
             {title:'Seo optimization'}
           ].map((f,i)=> (
-            <div key={i} className="p-6 border rounded-lg">
+            <div key={i} className="grid grid-cols-2 p-6 border rounded-lg">
+              <img src={IconSVG} alt="Feature Icon" className="w-6 h-6 mb-4" />
               <h3 className="font-bold mb-2">{f.title}</h3>
             </div>
           ))}
