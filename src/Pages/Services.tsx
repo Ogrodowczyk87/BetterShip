@@ -13,3 +13,11 @@ export default function Services(){
     </section>
   )
 }
+// feat: Update card layout and improve responsiveness
+
+// - Adjusted card layout to display in a single row using Tailwind CSS.
+// - Added responsive design to ensure cards stack on smaller screens.
+// - Refactored `ServicesCards` component for better readability and maintainability.
+// - Fixed TypeScript issues by adding proper type declarations.
+// - Added missing type definitions for `Utils.js` to resolve implicit `any` errors.
+// - Improved overall styling and alignment of cards.

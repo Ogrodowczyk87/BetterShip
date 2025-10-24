@@ -3,9 +3,9 @@ import { ServiceCard } from '../types/types'
 
 
 export  const cards = [
-     {id: 1, title: "Design", description: "Short description about Design service."},
-    {id: 2, title: "Development", description: "Short description about Development service."},
-    {id: 3, title: "Marketing", description: "Short description about Marketing service."},
+     {id: 1, title: "MVP", description: "Development of Minimum Viable Product to validate your idea quickly."},
+    {id: 2, title: "Audi & Consulting", description: "Short description about Audi & Consulting service."},
+    {id: 3, title: "Maintenance", description: "Short description about Maintenance service."},
    ]
 
 export const ServicesCards = () => {
