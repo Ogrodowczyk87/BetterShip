@@ -24,8 +24,8 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 text-left">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">We Build modern web applications.</h1>
         <p className="text-lg text-white mb-8">Get a quote, communicate contact, and start your project today.</p>
-          <a href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-md">Get a quote</a>
         <div className="flex justify-center gap-4">
+          <a href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-md">Get a quote</a>
           <a href="#portfolio" className="px-6 py-3 border border-gray-200 rounded-md">View Portfolio</a>
         </div>
 
