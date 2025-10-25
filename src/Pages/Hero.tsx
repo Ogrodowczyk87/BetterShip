@@ -23,7 +23,7 @@ const imageLogos = [
 export default function Hero() {
   
   return (
-<section className="relative overflow-hidden py-5">
+<section className="relative overflow-hidden py-5 bg-black">
    <div className="pointer-events-none absolute inset-0 z-0">
     <LightRays
       className="w-full h-full"
