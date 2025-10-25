@@ -23,8 +23,8 @@ const imageLogos = [
 export default function Hero() {
   
   return (
-<section className="relative overflow-hidden py-20">
-  <div className="pointer-events-none absolute inset-0 z-0">
+<section className="relative overflow-hidden py-5">
+   <div className="pointer-events-none absolute inset-0 z-0">
     <LightRays
       className="w-full h-full"
       raysOrigin="top-center"
@@ -44,8 +44,25 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">We Build modern web applications.</h1>
         <p className="text-lg text-white mb-8">Get a quote, communicate contact, and start your project today.</p>
         <div className="flex justify-left gap-4">
-          <a href="#contact" className="px-6 py-3 bg-secondary text-white rounded-md">Get a quote</a>
-          <a href="#portfolio" className="px-6 py-3 bg-secondary border border-gray-200 rounded-md">View Portfolio</a>
+          <button
+          
+            type="button"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center border border-white-1 px-6 py-3 rounded-md text-white hover:opacity-90 
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+            "
+          >
+            Get a quote
+          </button>
+            <button
+            type="button"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center border border-white-1 px-6 py-3 rounded-md text-white hover:opacity-90 
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+          ">
+            View Portfolio
+          </button>
+
         </div>
 
       {/* miejsce na reactbits component logo loop */}
