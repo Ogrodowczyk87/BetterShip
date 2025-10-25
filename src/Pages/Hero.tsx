@@ -2,6 +2,7 @@ import React from 'react'
 import LogoLoop from '../components/LogoLoop'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
+
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
@@ -19,8 +20,10 @@ const imageLogos = [
 
 
 export default function Hero() {
+  
   return (
     <section className="py-20 bg-background from-white to-gray-50">
+ 
       <div className="max-w-6xl mx-auto px-6 text-left">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">We Build modern web applications.</h1>
         <p className="text-lg text-white mb-8">Get a quote, communicate contact, and start your project today.</p>
@@ -48,3 +51,6 @@ export default function Hero() {
     </section>
   )
 }
+
+// import LightRays from './LightRays';
+
