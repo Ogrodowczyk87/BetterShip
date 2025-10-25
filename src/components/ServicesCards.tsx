@@ -16,10 +16,10 @@ export const ServicesCards = () => {
    
         return (
             <div className="flex flex-wrap justify-center gap-6 items-stretch ">{cards.map((card: ServiceCard) => (
-                <div key={card.id} className="grid grid-cols-2 items-center p-6 bg-gray-900 rounded-lg shadow text-center h-full w-72 shrink-0">
-                    <div className="flex items-center justify-center">{card.Icon}</div>
+                <div key={card.id} className="flex flex-row py-6  px-6  bg-gray-900 rounded-lg shadow text-center h-82 w-[305px] shrink-0">
+                    <div className="flex items-center justify-center mr-[20px]">{card.Icon}</div>
                     <div className="flex flex-col items-center justify-center">
-                        <h3 className="font-bold text-3xl mb-2">{card.title}</h3>
+                        <h3 className="font-bold text-3xl ">{card.title}</h3>
             <p className="text-sm text-gray-300">{card.description}</p>
             </div>
             
