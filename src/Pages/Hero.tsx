@@ -24,22 +24,22 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 text-left">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">We Build modern web applications.</h1>
         <p className="text-lg text-white mb-8">Get a quote, communicate contact, and start your project today.</p>
-        <div className="flex justify-center gap-4">
-          <a href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-md">Get a quote</a>
-          <a href="#portfolio" className="px-6 py-3 border border-gray-200 rounded-md">View Portfolio</a>
+        <div className="flex justify-left gap-4">
+          <a href="#contact" className="px-6 py-3 bg-secondary text-white rounded-md">Get a quote</a>
+          <a href="#portfolio" className="px-6 py-3 bg-secondary border border-gray-200 rounded-md">View Portfolio</a>
         </div>
 
       {/* miejsce na reactbits component logo loop */}
       <LogoLoop className='mt-10'       
         logos={techLogos}
-        speed={80}
+        speed={50}
         direction="left"
         logoHeight={48}
         gap={40}
         pauseOnHover
         scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
+        // fadeOut
+        // fadeOutColor="#FF0000"
         ariaLabel="Technology partners"
       />
       {/* miejsce na reactbits component logo loop */}
