@@ -1,19 +1,18 @@
-
 export type ServiceCard = {
-    id: number;
-    title: string;
-    description: string;
-    Icon: JSX.Element;
+  id: number;
+  title: string;
+  description: string;
+  Icon: JSX.Element;
 };
 export type ServicesCards = {
-    cards: ServiceCard[];
-}
+  cards: ServiceCard[];
+};
 
 export type PortfolioCard = {
-    id: number;
-    image: string;
-    description: string;
+  id: number;
+  image: string;
+  description: string;
 };
 export type PortfolioCards = {
-    cards: PortfolioCard[];
-}
+  cards: PortfolioCard[];
+};

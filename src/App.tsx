@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 // import Header from './components/Navigation'
-import Hero from './Pages/Hero'
+import Hero from "./Pages/Hero";
 // import Partners from './Pages/Partners'
-import Services from './Pages/Services'
-import Features from './Pages/Features'
+import Services from "./Pages/Services";
+import Features from "./Pages/Features";
 // import Testimonial from './Pages/Testimonial'
-import Portfolio from './Pages/Portfolio'
-import Contact from './Pages/Contact'
-import Footer from './Pages/Footer'
+import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
 
 export default function App() {
   return (
@@ -24,5 +24,5 @@ export default function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
