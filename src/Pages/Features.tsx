@@ -2,6 +2,8 @@ import React from "react";
 import IconSVG from "../Assets/check.svg";
 import Image from "../Assets/peter.jpg";
 import { IoStar } from "react-icons/io5";
+import { IoMdCheckmark } from "react-icons/io";
+
 
 export default function Features() {
   return (
@@ -30,12 +32,7 @@ export default function Features() {
               key={i}
               className="flex items-center gap-1 p-4 border rounded-lg h-[52px] w-[150px] bg-transparent"
             >
-              <img
-                src={IconSVG}
-                alt="icon mark"
-                aria-hidden
-                className="w-5 h-5 mr-1 shrink-0"
-              />
+              <IoMdCheckmark className="w-5 h-5 mr-1 shrink-0 text-blue-500" />
               <h3 className="font-semibold leading-none">{f.title}</h3>
             </div>
           ))}
