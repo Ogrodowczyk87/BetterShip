@@ -6,8 +6,6 @@ import Portfolio2 from "../Assets/Portfolio2.jpg";
 import Portfolio3 from "../Assets/Portfolio3.jpg";
 import Portfolio4 from "../Assets/Portfolio4.jpg";
 
-
-
 export const cards = [
   { id: 1, image: Portfolio, description: "E‑commerce redesign" },
   { id: 2, image: Portfolio2, description: "SaaS dashboard UI" },
@@ -19,7 +17,10 @@ export const PortfolioCards = () => {
   return (
     <div className=" flex flex-wrap justify-center gap-3 items-stretch mx-auto">
       {cards.map((card: PortfolioCard) => (
-        <div key={card.id} className="p-2 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[250px] shrink-0">
+        <div
+          key={card.id}
+          className="p-2 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[250px] shrink-0"
+        >
           <img
             className="h-[100px] w-[100px]  mx-auto object-cover rounded-md"
             src={card.image}
