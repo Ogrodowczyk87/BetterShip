@@ -32,7 +32,7 @@ export const ServicesCards = () => {
       {cards.map((card: ServiceCard) => (
         <div
           key={card.id}
-          className="flex flex-row py-6  px-6  bg-gray-900 rounded-lg shadow text-center h-82 w-[305px] shrink-0"
+          className="flex flex-row py-6  px-6 bg-slate-900/45  rounded-lg shadow text-center h-82 w-[305px] shrink-0"
         >
           <div className="flex items-center justify-center mr-[20px]">
             {card.Icon}
