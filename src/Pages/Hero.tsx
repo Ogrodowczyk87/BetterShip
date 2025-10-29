@@ -7,7 +7,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import Navigation from "../components/Navigation";
-import LightRays from "../components/LightRays";
+// import LightRays from "../components/LightRays";
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -45,21 +45,8 @@ const imageLogos = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-5 bg-black">
-      <div className="pointer-events-none absolute inset-0 z-0">
-        <LightRays
-          className="w-full h-full"
-          raysOrigin="top-center"
-          raysColor="#00ffff"
-          raysSpeed={1.5}
-          lightSpread={0.8}
-          rayLength={1.2}
-          followMouse
-          mouseInfluence={0.1}
-          noiseAmount={0.1}
-          distortion={0.05}
-        />
-      </div>
+    <section className="relative overflow-hidden py-5 ">
+  
       <Navigation />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-left">
