@@ -7,8 +7,8 @@ import { IoMdCheckmark } from "react-icons/io";
 
 export default function Features() {
   return (
-    <section id="features" className=" bg-black pb-5">
-      <h2 className="text-3xl font-bold mb-6 text-center">Our Features</h2>
+    <section id="features" className=" bg-black pb-[38px]">
+      <h2 className="text-3xl font-bold mb-12 text-center">Our Features</h2>
       <div className="grid grid-cols-2  max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center justify-center text-center pr-3">
           <img src={Image} className="w-[90px] h-[90px] mb-6 rounded-full" />

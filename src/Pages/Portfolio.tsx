@@ -3,9 +3,9 @@ import { PortfolioCards } from "../components/PortfolioCards";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="bg-black py-4">
+    <section id="portfolio" className="bg-black py-4 mb-[68px]">
       <div className="max-w-6xl mx-auto px-3">
-        <h2 className="text-5xl font-semibold mb-6 text-center">Portfolio</h2>
+        <h2 className="text-5xl font-semibold mb-[42px] text-center">Portfolio</h2>
         <div>
           <PortfolioCards />
         </div>

@@ -49,14 +49,14 @@ export default function Hero() {
   
       <Navigation />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-left">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-left mt-24">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
           We Build modern web applications.
         </h1>
-        <p className="text-lg text-white mb-8">
+        <p className="text-lg text-white mb-12">
           Get a quote, communicate contact, and start your project today.
         </p>
-        <div className="flex justify-left gap-4">
+        <div className="flex justify-left gap-4 mb-28">
           <button
             type="button"
             onClick={() =>
@@ -85,7 +85,6 @@ export default function Hero() {
           </button>
         </div>
 
-        {/* miejsce na reactbits component logo loop */}
         <LogoLoop
           className="mt-10"
           logos={techLogos}
@@ -99,7 +98,6 @@ export default function Hero() {
           // fadeOutColor="#FF0000"
           ariaLabel="Technology partners"
         />
-        {/* miejsce na reactbits component logo loop */}
       </div>
     </section>
   );
