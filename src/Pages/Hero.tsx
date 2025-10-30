@@ -7,7 +7,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import Navigation from "../components/Navigation";
-// import LightRays from "../components/LightRays";
+import Image from "../Assets/Portfolio2.jpg";
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -46,16 +46,22 @@ const imageLogos = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden py-5 ">
-  
       <Navigation />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-left mt-24">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
-          We Build modern web applications.
-        </h1>
-        <p className="text-lg text-white mb-12">
-          Get a quote, communicate contact, and start your project today.
-        </p>
+        <div className="flex flex-col items-start md:flex-row md:items-center justify-between mb-12 gap-6">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
+              We Build modern web applications.
+            </h1>
+            <p className="text-lg text-white mb-12">
+              Get a quote, communicate contact, and start your project today.
+            </p>
+          </div>
+          <div>
+            <img src={Image} className="hidden md:block w-148 mb-6" />
+          </div>
+        </div>
         <div className="flex justify-left gap-4 mb-28">
           <button
             type="button"

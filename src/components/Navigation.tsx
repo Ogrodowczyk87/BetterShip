@@ -7,7 +7,7 @@ export default function Navigation() {
     <header className=" shadow-sm mb-5">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold">BETTERSHIP</div>
-        <nav className="space-x-4 hidden md:flex">
+        <nav className="space-x-4 hidden md:flex md:mr-8">
           <a href="#services" className="text-white ">
             Services
           </a>

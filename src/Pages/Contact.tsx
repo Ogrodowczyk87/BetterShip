@@ -8,9 +8,9 @@ export default function Contact() {
           Have a project in mind?{" "}
           <span className="text-indigo-300">Let's talk!</span>
         </h2>
-        <form className="space-y-4">
+        <form className="space-y-4 flex flex-col items-center">
           <input
-            className="w-full p-3 bg-slate-900/45 border border-slate-600 rounded-lg text-slate-300"
+            className="w-[300px]  p-3 bg-slate-900/45 border border-slate-600 rounded-lg text-slate-300"
             placeholder="Email"
           />
           <div className="text-center">
