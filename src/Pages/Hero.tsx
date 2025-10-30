@@ -45,38 +45,53 @@ const imageLogos = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-5 ">
+    <section className="relative overflow-hidden py-5">
       <Navigation />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-left mt-24">
-        <div className="flex flex-col items-start md:flex-row md:items-center justify-between mb-12 gap-6">
+        <header className="flex flex-col items-start md:flex-row md:items-center justify-between mb-12 gap-6">
           <div>
             <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
               We Build modern web applications.
             </h1>
-            <p className="text-lg text-white mb-12">
+            <p className="text-3xl text-white mb-12">
               Get a quote, communicate contact, and start your project today.
             </p>
           </div>
           {/* <div>
             <img src={Image} className="hidden md:block w-[430px] mb-6" />
           </div> */}
-          <div className="hidden md:block terminal bg-slate-500/20 border border-slate-400/30 rounded-lg shadow-lg w-[320px] md:w-[430px] h-[200px] md:h-[250px]">
-            <div className="terminal-header">
+          <aside
+            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-500/20 border border-slate-400/30 
+          rounded-lg shadow-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
+          >
+            <div className="terminal-header pb-4">
               <span className="bg-red-600 h-[12px] w-[12px] rounded-full inline-block ml-2 mr-2"></span>
               <span className="bg-yellow-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
               <span className="bg-green-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
-              <span className="terminal-title">Terminal</span>
+              <span className="ml-4">App.Jox</span>
+              <span className="ml-4 text-slate-500">22:10</span>
             </div>
-            <div className="terminal-body">
-              <pre>
-$ echo "Hello, World!"
-Hello, World!
-    </pre>
-  </div>
-</div>
-        </div>
-        <div className="flex justify-left gap-4 mb-28">
+            <div className="grid grid-cols-1 terminal-body pl-2 pr-2 overflow-x-hidden">
+              <div>
+                <pre>
+                  <code className="text-[10px]">
+                    {`const `}<span className="text-blue-400">fetchData</span>{` = async () => {
+    `}<span className="text-yellow-400">console</span>{`.`}<span className="text-purple-400">log</span>{`("Fetching data from API...");
+    const `}<span className="text-green-400">response</span>{` = await `}<span className="text-yellow-400">fetch</span>{`("https://api.BETTERSHIP.com/data");
+    const `}<span className="text-green-400">data</span>{` = await `}<span className="text-green-400">response</span>{`.json();
+    `}<span className="text-yellow-400">console</span>{`.`}<span className="text-purple-400">log</span>{`("Data received:", `}<span className="text-green-400">data</span>{`);
+  };
+
+  `}<span className="text-green-400">fetchData</span>{`();`}
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </aside>
+        </header>
+
+        <nav className="flex justify-left gap-4 mb-28">
           <button
             type="button"
             onClick={() =>
@@ -103,7 +118,7 @@ Hello, World!
           >
             View Portfolio
           </button>
-        </div>
+        </nav>
 
         <LogoLoop
           className="mt-10"
@@ -114,8 +129,6 @@ Hello, World!
           gap={40}
           pauseOnHover
           scaleOnHover
-          // fadeOut
-          // fadeOutColor="#FF0000"
           ariaLabel="Technology partners"
         />
       </div>
