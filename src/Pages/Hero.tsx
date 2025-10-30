@@ -58,9 +58,23 @@ export default function Hero() {
               Get a quote, communicate contact, and start your project today.
             </p>
           </div>
-          <div>
-            <img src={Image} className="hidden md:block w-148 mb-6" />
-          </div>
+          {/* <div>
+            <img src={Image} className="hidden md:block w-[430px] mb-6" />
+          </div> */}
+          <div className="hidden md:block terminal bg-slate-500/20 border border-slate-400/30 rounded-lg shadow-lg w-[320px] md:w-[430px] h-[200px] md:h-[250px]">
+            <div className="terminal-header">
+              <span className="bg-red-600 h-[12px] w-[12px] rounded-full inline-block ml-2 mr-2"></span>
+              <span className="bg-yellow-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
+              <span className="bg-green-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
+              <span className="terminal-title">Terminal</span>
+            </div>
+            <div className="terminal-body">
+              <pre>
+$ echo "Hello, World!"
+Hello, World!
+    </pre>
+  </div>
+</div>
         </div>
         <div className="flex justify-left gap-4 mb-28">
           <button
