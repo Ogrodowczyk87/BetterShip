@@ -125,9 +125,8 @@ export default function Hero() {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="inline-flex items-center border border-white-1 px-6 py-3 rounded-md text-white hover:opacity-90 
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-            "
+            className="inline-flex items-center border border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
           >
             Get a quote
           </button>
@@ -138,9 +137,8 @@ export default function Hero() {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="inline-flex items-center border border-white-1 px-6 py-3 rounded-md text-white hover:opacity-90 
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-          "
+            className="inline-flex items-center border border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
           >
             View Portfolio
           </button>

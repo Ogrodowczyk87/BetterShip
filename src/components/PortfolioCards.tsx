@@ -24,7 +24,7 @@ export const PortfolioCards = () => {
       {cards.map((card: PortfolioCard) => (
         <div
           key={card.id}
-          className="p-2 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[250px] shrink-0"
+          className="p-2 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[250px] shrink-0 hover:bg-slate-500/30 hover:text-white"
         >
           {/* Image section of the card */}
           <img

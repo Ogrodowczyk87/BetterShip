@@ -16,7 +16,7 @@ export default function Contact() {
         <form className="space-y-4 flex flex-col items-center">
           {/* Input field for email */}
           <input
-            className="w-[300px] p-3 bg-slate-900/45 border border-slate-600 rounded-lg text-slate-300"
+            className="w-[300px] p-3 bg-slate-900/45 border border-slate-600 rounded-lg text-slate-300 hover:bg-slate-500/30 hover:text-white"
             placeholder="Email"
           />
           <div className="text-center">

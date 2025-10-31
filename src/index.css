@@ -1,71 +1,14 @@
 :root {
   --background: 14 14% 6%; /* fallback HSL for theme mapping */
-  --foreground: 220 14% 92%;
-  --primary: 245 84% 67%;
+  --foreground: 220 14% 92%; /* Text color */
+  --primary: 245 84% 67%; /* Primary action color */
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* -------- LIGHT (opcjonalny) -------- */
-:root {
-  /* Tło / tekst */
-  --background: 210 20% 98%; /* #F6F8FB */
-  --foreground: 220 15% 15%; /* #1F2530 */
-
-  /* Panele / karty / stany słabe */
-  --card: 210 24% 99%; /* #FAFBFD */
-  --card-foreground: 220 15% 15%;
-  --muted: 215 16% 92%; /* #E7EAF0 */
-  --muted-foreground: 220 10% 40%; /* #5A6578 */
-  --border: 215 16% 88%; /* #D7DDE7 */
-  --input: 215 16% 88%;
-
-  /* Główne kolory akcji */
-  --primary: 245 84% 67%; /* #6C6FF6  (indigo/blue) */
-  --primary-foreground: 0 0% 100%; /* #FFFFFF */
-
-  --secondary: 222 16% 20%; /* #1E2430  (ciemny neutral) */
-  --secondary-foreground: 210 20% 96%;
-
-  --accent: 258 89% 66%; /* #8B5CF6 (violet) */
-  --accent-foreground: 0 0% 100%;
-
-  /* Focus ring */
-  --ring: 245 84% 67%; /* spójny z --primary */
-  --radius: 0.75rem;
-}
-
-/* -------- DARK (domyślny, jak w podglądach) -------- */
-.dark {
-  /* Tło / tekst */
-  --background: 220 28% 7%; /* #0B0F16 / głębokie granatowe */
-  --foreground: 220 14% 92%; /* #E6EAF2 */
-
-  /* Panele / karty / słabe stany */
-  --card: 220 22% 12%; /* #151a22 */
-  --card-foreground: 220 14% 92%;
-  --muted: 220 18% 18%; /* #202633 */
-  --muted-foreground: 220 12% 62%; /* #9AA3B2 */
-  --border: 220 16% 24%; /* #2A3140 */
-  --input: 220 16% 24%;
-
-  /* Główne kolory akcji (glow-ish) */
-  --primary: 245 84% 67%; /* #6C6FF6 */
-  --primary-foreground: 0 0% 100%; /* #FFFFFF */
-
-  --secondary: 225 15% 22%; /* #2A2F3A */
-  --secondary-foreground: 220 14% 92%;
-
-  --accent: 258 89% 66%; /* #8B5CF6 */
-  --accent-foreground: 0 0% 100%;
-
-  /* Focus ring */
-  --ring: 245 84% 67%;
-}
-
-/* Utility: zastosuj tokeny */
+/* Utility: apply tokens */
 @layer base {
   * {
     @apply border-border;
@@ -73,11 +16,6 @@
   body {
     @apply bg-background text-foreground antialiased;
   }
-}
-:root {
-  --background: 14 14% 6%; /* fallback HSL for theme mapping */
-  --foreground: 220 14% 92%;
-  --primary: 245 84% 67%;
 }
 
 @layer base {

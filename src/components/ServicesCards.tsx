@@ -37,7 +37,7 @@ export const ServicesCards = () => {
       {cards.map((card: ServiceCard) => (
         <div
           key={card.id}
-          className="flex flex-row py-6 px-6 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[305px] shrink-0"
+          className="flex flex-row py-6 px-6 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[305px] shrink-0 hover:bg-slate-500/30 hover:text-white"
         >
           {/* Icon section of the card */}
           <div className="flex items-center justify-center mr-[20px]">

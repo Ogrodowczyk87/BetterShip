@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     // Section for displaying portfolio items with padding and background styling
     <section id="portfolio" className="bg-black py-4 mb-[68px]">
-      <div className="max-w-6xl mx-auto px-3">
+      <div className="max-w-6xl mx-auto px-3 ">
         {/* Heading for the portfolio section */}
         <h2 className="text-5xl font-semibold mb-[42px] text-center">
           Portfolio

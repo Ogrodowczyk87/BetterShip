@@ -36,7 +36,7 @@ export default function Features() {
           ].map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-1 p-4 border rounded-lg h-[52px] w-[150px] bg-transparent"
+              className="flex items-center gap-1 p-4 border  h-[52px] w-[150px] border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white"
             >
               <IoMdCheckmark className="w-5 h-5 mr-1 shrink-0 text-blue-500" />
               <h3 className="font-semibold leading-none">{f.title}</h3>
@@ -47,3 +47,5 @@ export default function Features() {
     </section>
   );
 }
+
+

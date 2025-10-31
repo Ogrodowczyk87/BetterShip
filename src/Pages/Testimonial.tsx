@@ -7,11 +7,11 @@ export default function Testimonial() {
   return (
     // Section for testimonials with padding and background styling
     <section className="py-16 bg-black">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-6 text-center ">
         {/* Heading for the testimonial section */}
         <h2 className="text-5xl font-semibold mb-6">What clients say</h2>
         {/* Blockquote for the client testimonial */}
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow">
+        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
           "This product changed our business." — Client
           <div className="flex mt-2 mb-4 content-center">
                       <IoStar className="text-yellow-500 mr-1" />
@@ -21,7 +21,7 @@ export default function Testimonial() {
                       <IoStar className="text-yellow-500" />
                     </div>
         </blockquote>
-          <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow">
+        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
           "Amazing service!" — Client
           <div className="flex mt-2 mb-4 content-center">
                       <IoStar className="text-yellow-500 mr-1" />
@@ -31,7 +31,7 @@ export default function Testimonial() {
                       <IoStar className="text-yellow-500" />
                     </div>
         </blockquote>
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow">
+        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
           "Exceptional quality!" — Client
           <div className="flex mt-2 mb-4 content-center">
             <IoStar className="text-yellow-500 mr-1" />
@@ -41,7 +41,7 @@ export default function Testimonial() {
             <IoStar className="text-yellow-500" />
           </div>
         </blockquote>
-        <blockquote className="bg-slate-900/45 p-6 rounded-lg shadow">
+        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
           "Highly recommend to everyone!" — Client
           <div className="flex mt-2 mb-4 content-center">
             <IoStar className="text-yellow-500 mr-1" />
