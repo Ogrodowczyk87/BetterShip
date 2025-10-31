@@ -64,11 +64,11 @@ export default function Hero() {
             </p>
           </div>       
           <aside
-            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-500/20 border border-slate-400/30 
+            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-500/20 border border-slate-400/30  hover:bg-slate-500/30
           rounded-lg shadow-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
           >
             {/* Terminal-like UI with a code snippet */}
-            <div className="terminal-header pb-4">
+            <div className="terminal-header pb-4 ">
               <span className="bg-red-600 h-[12px] w-[12px] rounded-full inline-block ml-2 mr-2"></span>
               <span className="bg-yellow-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
               <span className="bg-green-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
