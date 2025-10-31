@@ -11,9 +11,9 @@ export default function Navigation() {
     <header className="shadow-sm mb-5">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo or brand name */}
-        <div className="text-2xl font-bold">BETTERSHIP</div>
+        <div className="text-3xl font-bold">BETTERSHIP</div>
         {/* Desktop navigation menu */}
-        <nav className="space-x-4 hidden md:flex md:mr-8">
+        <nav className="space-x-4 text-2xl hidden md:flex md:mr-8">
           <a href="#services" className="text-white ">
             Services
           </a>
