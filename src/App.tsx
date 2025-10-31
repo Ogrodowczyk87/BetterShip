@@ -11,7 +11,7 @@ import LightRays from "./components/LightRays";
 export default function App() {
   return (
     <div className="relative overflow-hidden py-5 bg-black">
-            <div className="pointer-events-none absolute inset-0 z-0">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <LightRays
           className="w-full h-full"
           raysOrigin="top-center"
@@ -23,8 +23,8 @@ export default function App() {
           mouseInfluence={0.1}
           noiseAmount={0.1}
           distortion={0.05}
-        /> 
-      </div> 
+        />
+      </div>
       <main className="flex-1">
         <Hero />
         <Services />

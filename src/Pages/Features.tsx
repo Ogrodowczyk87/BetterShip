@@ -4,7 +4,6 @@ import Image from "../Assets/peter.jpg";
 import { IoStar } from "react-icons/io5";
 import { IoMdCheckmark } from "react-icons/io";
 
-
 export default function Features() {
   return (
     <section id="features" className=" bg-black pb-[38px]">

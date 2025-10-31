@@ -22,31 +22,29 @@ export default function Navigation() {
           </a>
         </nav>
         <button
-         className="md:hidden text-white text-3xl"
-         onClick={() => setIsOpen(!isOpen)}
-         aria-label="Toogle navigation menu"
-       >
-         ☰
-       </button>
+          className="md:hidden text-white text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toogle navigation menu"
+        >
+          ☰
+        </button>
       </div>
-{isOpen && (
-    <nav className="md:hidden bg-black text-white text-3xl space-y-2 px-6 py-4 flex flex-col items-center justify-center">
-      <a href="#services" className="block text-white">
-        Services
-      </a>
-      <a href="#features" className="block text-white">
-        Features
-      </a>
-      <a href="#portfolio" className="block text-white">
-        Portfolio
-      </a>
-      <a href="#contact" className="block text-white">
-        Contact
-      </a>
-    </nav>
-)}  
-
-
+      {isOpen && (
+        <nav className="md:hidden bg-black text-white text-3xl space-y-2 px-6 py-4 flex flex-col items-center justify-center">
+          <a href="#services" className="block text-white">
+            Services
+          </a>
+          <a href="#features" className="block text-white">
+            Features
+          </a>
+          <a href="#portfolio" className="block text-white">
+            Portfolio
+          </a>
+          <a href="#contact" className="block text-white">
+            Contact
+          </a>
+        </nav>
+      )}
     </header>
   );
 }

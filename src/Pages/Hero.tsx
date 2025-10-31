@@ -1,3 +1,4 @@
+// Import necessary libraries and components
 import React from "react";
 import LogoLoop from "../components/LogoLoop";
 import {
@@ -7,8 +8,8 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import Navigation from "../components/Navigation";
-import Image from "../Assets/Portfolio2.jpg";
 
+// Define an array of technology logos with their respective links
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
@@ -24,7 +25,7 @@ const techLogos = [
   },
 ];
 
-// Alternative with image sources
+// Alternative array with image-based logos
 const imageLogos = [
   {
     src: "/logos/company1.png",
@@ -43,28 +44,30 @@ const imageLogos = [
   },
 ];
 
+// Define the Hero component
 export default function Hero() {
   return (
+    // Main section for the Hero component
     <section className="relative overflow-hidden py-5">
+      {/* Navigation bar */}
       <Navigation />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-left mt-24">
         <header className="flex flex-col items-start md:flex-row md:items-center justify-between mb-12 gap-6">
           <div>
+            {/* Main heading and description */}
             <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
               We Build modern web applications.
             </h1>
             <p className="text-3xl text-white mb-12">
               Get a quote, communicate contact, and start your project today.
             </p>
-          </div>
-          {/* <div>
-            <img src={Image} className="hidden md:block w-[430px] mb-6" />
-          </div> */}
+          </div>       
           <aside
             className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-500/20 border border-slate-400/30 
           rounded-lg shadow-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
           >
+            {/* Terminal-like UI with a code snippet */}
             <div className="terminal-header pb-4">
               <span className="bg-red-600 h-[12px] w-[12px] rounded-full inline-block ml-2 mr-2"></span>
               <span className="bg-yellow-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
@@ -76,14 +79,36 @@ export default function Hero() {
               <div>
                 <pre>
                   <code className="text-[10px]">
-                    {`const `}<span className="text-blue-400">fetchData</span>{` = async () => {
-    `}<span className="text-yellow-400">console</span>{`.`}<span className="text-purple-400">log</span>{`("Fetching data from API...");
-    const `}<span className="text-green-400">response</span>{` = await `}<span className="text-yellow-400">fetch</span>{`("https://api.BETTERSHIP.com/data");
-    const `}<span className="text-green-400">data</span>{` = await `}<span className="text-green-400">response</span>{`.json();
-    `}<span className="text-yellow-400">console</span>{`.`}<span className="text-purple-400">log</span>{`("Data received:", `}<span className="text-green-400">data</span>{`);
+                    {`const `}
+                    <span className="text-blue-400">fetchData</span>
+                    {` = async () => {
+    `}
+                    <span className="text-yellow-400">console</span>
+                    {`.`}
+                    <span className="text-purple-400">log</span>
+                    {`("Fetching data from API...");
+    const `}
+                    <span className="text-green-400">response</span>
+                    {` = await `}
+                    <span className="text-yellow-400">fetch</span>
+                    {`("https://api.BETTERSHIP.com/data");
+    const `}
+                    <span className="text-green-400">data</span>
+                    {` = await `}
+                    <span className="text-green-400">response</span>
+                    {`.json();
+    `}
+                    <span className="text-yellow-400">console</span>
+                    {`.`}
+                    <span className="text-purple-400">log</span>
+                    {`("Data received:", `}
+                    <span className="text-green-400">data</span>
+                    {`);
   };
 
-  `}<span className="text-green-400">fetchData</span>{`();`}
+  `}
+                    <span className="text-green-400">fetchData</span>
+                    {`();`}
                   </code>
                 </pre>
               </div>
@@ -92,6 +117,7 @@ export default function Hero() {
         </header>
 
         <nav className="flex justify-left gap-4 mb-28">
+          {/* Buttons for navigation */}
           <button
             type="button"
             onClick={() =>
@@ -120,6 +146,7 @@ export default function Hero() {
           </button>
         </nav>
 
+        {/* Logo loop showcasing technology partners */}
         <LogoLoop
           className="mt-10"
           logos={techLogos}
