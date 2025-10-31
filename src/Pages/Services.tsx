@@ -10,7 +10,7 @@ export default function Services() {
     <section id="services" className="bg-black pt-20 pb-28">
       <div className="max-w-6xl  mx-auto px-6 ">
         {/* Heading for the services section */}
-        <h2 className="text-4xl font-semibold mb-8 text-left ">Our Services</h2>
+        <h2 className="text-4xl font-semibold mb-8 text-center">Our Services</h2>
         <div>
           {/* Render the ServicesCards component */}
           <ServicesCards />
