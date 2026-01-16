@@ -1,3 +1,5 @@
+import type { ComponentType } from "react";
+
 export type ServiceCard = {
   id: number;
   title: string;
@@ -10,8 +12,11 @@ export type ServicesCards = {
 
 export type PortfolioCard = {
   id: number;
-  image: string;
-  description: string;
+  title: string;
+  tag: string;
+  result: string;
+  Icon: ComponentType<{ className?: string }>;
+  accent: string;
 };
 export type PortfolioCards = {
   cards: PortfolioCard[];

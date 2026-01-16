@@ -37,7 +37,7 @@ export const ServicesCards = () => {
       {cards.map((card: ServiceCard) => (
         <div
           key={card.id}
-          className="flex flex-row py-6 px-6 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[305px] shrink-0 hover:bg-slate-500/30 hover:text-white"
+          className="flex flex-row py-6 px-6 bg-white/85 border border-slate-200 rounded-lg shadow text-center h-82 w-[305px] shrink-0 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:border-amber-200"
         >
           {/* Icon section of the card */}
           <div className="flex items-center justify-center mr-[20px]">
@@ -46,7 +46,7 @@ export const ServicesCards = () => {
           {/* Title and description section of the card */}
           <div className="flex flex-col items-center justify-center">
             <h3 className="font-bold text-3xl ">{card.title}</h3>
-            <p className="text-sm text-gray-300">{card.description}</p>
+            <p className="text-sm text-slate-600">{card.description}</p>
           </div>
         </div>
       ))}

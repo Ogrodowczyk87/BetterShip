@@ -7,12 +7,15 @@ import { PortfolioCards } from "../components/PortfolioCards";
 export default function Portfolio() {
   return (
     // Section for displaying portfolio items with padding and background styling
-    <section id="portfolio" className="bg-black py-4 mb-[68px]">
-      <div className="max-w-6xl mx-auto px-3 ">
+    <section id="portfolio" className="bg-[#f8f5f2] py-10 mb-[68px]">
+      <div className="max-w-6xl mx-auto px-3">
         {/* Heading for the portfolio section */}
-        <h2 className="text-5xl font-semibold mb-[42px] text-center">
-          Portfolio
-        </h2>
+        <div className="text-center mb-[42px]">
+          <h2 className="text-5xl font-semibold">Selected Work</h2>
+          <p className="mt-3 text-lg text-slate-600">
+            A few recent builds focused on conversion, speed, and clarity.
+          </p>
+        </div>
         <div>
           {/* Render the PortfolioCards component */}
           <PortfolioCards />

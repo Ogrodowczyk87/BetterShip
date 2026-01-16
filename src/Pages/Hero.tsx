@@ -25,25 +25,6 @@ const techLogos = [
   },
 ];
 
-// Alternative array with image-based logos
-const imageLogos = [
-  {
-    src: "/logos/company1.png",
-    alt: "Company 1",
-    href: "https://company1.com",
-  },
-  {
-    src: "/logos/company2.png",
-    alt: "Company 2",
-    href: "https://company2.com",
-  },
-  {
-    src: "/logos/company3.png",
-    alt: "Company 3",
-    href: "https://company3.com",
-  },
-];
-
 // Define the Hero component
 export default function Hero() {
   return (
@@ -59,12 +40,12 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
               We Build modern web applications.
             </h1>
-            <p className="text-3xl text-white mb-12">
+            <p className="text-3xl text-slate-700 mb-12">
               Get a quote, communicate contact, and start your project today.
             </p>
           </div>       
           <aside
-            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-500/20 border border-slate-400/30  hover:bg-slate-500/30
+            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-white/80 border border-slate-200 hover:bg-white
           rounded-lg shadow-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
           >
             {/* Terminal-like UI with a code snippet */}
@@ -116,20 +97,8 @@ export default function Hero() {
           </aside>
         </header>
 
-        <nav className="flex justify-left gap-4 mb-28">
+        <nav className="flex justify-start gap-4 mb-28">
           {/* Buttons for navigation */}
-          <button
-            type="button"
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            className="inline-flex items-center border border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
-          >
-            Get a quote
-          </button>
           <button
             type="button"
             onClick={() =>
@@ -137,8 +106,20 @@ export default function Hero() {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="inline-flex items-center border border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
+            className="inline-flex items-center border border-slate-900 bg-slate-900 px-6 py-3 rounded-md text-white transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-200/70
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
+          >
+            Get a quote
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              document
+                .getElementById("portfolio")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="inline-flex items-center border border-slate-300 bg-white px-6 py-3 rounded-md text-slate-900 transition-all duration-300 hover:bg-amber-50 hover:border-amber-200 hover:shadow-lg hover:shadow-amber-100/70
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
           >
             View Portfolio
           </button>

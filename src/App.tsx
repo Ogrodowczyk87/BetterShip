@@ -10,13 +10,13 @@ import LightRays from "./components/LightRays";
 
 export default function App() {
   return (
-    <div className="relative overflow-hidden py-5 bg-black">
+    <div className="relative overflow-hidden py-5 bg-[#f8f5f2] text-slate-900">
       <div className="pointer-events-none absolute inset-0 z-0">
         <LightRays
-          className="w-full h-full"
+          className="w-full h-full opacity-35"
           raysOrigin="top-center"
-          raysColor="#00ffff"
-          raysSpeed={1.5}
+          raysColor="#ffd9a3"
+          raysSpeed={1.1}
           lightSpread={0.8}
           rayLength={1.2}
           followMouse

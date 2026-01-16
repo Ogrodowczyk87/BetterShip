@@ -6,12 +6,12 @@ import { IoStar } from "react-icons/io5";
 export default function Testimonial() {
   return (
     // Section for testimonials with padding and background styling
-    <section className="py-16 bg-black">
-      <div className="max-w-4xl mx-auto px-6 text-center ">
+    <section className="py-16 bg-[#f8f5f2]">
+      <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading for the testimonial section */}
         <h2 className="text-5xl font-semibold mb-6">What clients say</h2>
         {/* Blockquote for the client testimonial */}
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
+        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-200">
           "This product changed our business." — Client
           <div className="flex mt-2 mb-4 content-center">
                       <IoStar className="text-yellow-500 mr-1" />
@@ -21,7 +21,7 @@ export default function Testimonial() {
                       <IoStar className="text-yellow-500" />
                     </div>
         </blockquote>
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
+        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-200">
           "Amazing service!" — Client
           <div className="flex mt-2 mb-4 content-center">
                       <IoStar className="text-yellow-500 mr-1" />
@@ -31,7 +31,7 @@ export default function Testimonial() {
                       <IoStar className="text-yellow-500" />
                     </div>
         </blockquote>
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
+        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-200">
           "Exceptional quality!" — Client
           <div className="flex mt-2 mb-4 content-center">
             <IoStar className="text-yellow-500 mr-1" />
@@ -41,7 +41,7 @@ export default function Testimonial() {
             <IoStar className="text-yellow-500" />
           </div>
         </blockquote>
-        <blockquote className="bg-slate-900/45 p-6 mb-4 rounded-lg shadow hover:bg-slate-500/30 hover:text-white">
+        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-200">
           "Highly recommend to everyone!" — Client
           <div className="flex mt-2 mb-4 content-center">
             <IoStar className="text-yellow-500 mr-1" />

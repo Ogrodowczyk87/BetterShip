@@ -1,41 +1,81 @@
 // Import necessary libraries and assets
 import React from "react";
 import { PortfolioCard } from "../types/types";
-import portfolioImage from "../Assets/portfolio.jpg";
-import Portfolio from "../Assets/Portfolio1.jpg";
-import Portfolio2 from "../Assets/Portfolio2.jpg";
-import Portfolio3 from "../Assets/Portfolio3.jpg";
-import Portfolio4 from "../Assets/Portfolio4.jpg";
+import {
+  RiShoppingBag3Line,
+  RiDashboardLine,
+  RiSmartphoneLine,
+  RiSpeedUpLine,
+} from "react-icons/ri";
 
 // Define an array of portfolio cards with their respective images and descriptions
 export const cards = [
-  { id: 1, image: Portfolio, description: "E‑commerce redesign" },
-  { id: 2, image: Portfolio2, description: "SaaS dashboard UI" },
-  { id: 3, image: Portfolio3, description: "Mobile app landing" },
-  { id: 4, image: Portfolio4, description: "Core Web Vitals" },
+  {
+    id: 1,
+    title: "E-commerce redesign",
+    tag: "Retail",
+    result: "+32% conversion",
+    Icon: RiShoppingBag3Line,
+    accent: "from-amber-100 to-orange-200 text-orange-700",
+  },
+  {
+    id: 2,
+    title: "SaaS dashboard UI",
+    tag: "B2B SaaS",
+    result: "-41% support tickets",
+    Icon: RiDashboardLine,
+    accent: "from-sky-100 to-blue-200 text-blue-700",
+  },
+  {
+    id: 3,
+    title: "Mobile app landing",
+    tag: "Product",
+    result: "+2.1x trial starts",
+    Icon: RiSmartphoneLine,
+    accent: "from-emerald-100 to-lime-200 text-emerald-700",
+  },
+  {
+    id: 4,
+    title: "Core Web Vitals",
+    tag: "Performance",
+    result: "95+ Lighthouse",
+    Icon: RiSpeedUpLine,
+    accent: "from-fuchsia-100 to-pink-200 text-pink-700",
+  },
 ];
 
 // Define the PortfolioCards component
 export const PortfolioCards = () => {
   return (
     // Container for the portfolio cards
-    <div className="flex flex-wrap justify-center gap-3 items-stretch mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mx-auto">
       {/* Map through the cards array and render each portfolio card */}
-      {cards.map((card: PortfolioCard) => (
+      {cards.map((card: PortfolioCard) => {
+        const Icon = card.Icon;
+        return (
         <div
           key={card.id}
-          className="p-2 bg-slate-900/45 rounded-lg shadow text-center h-82 w-[250px] shrink-0 hover:bg-slate-500/30 hover:text-white"
+          className="group p-4 bg-white/85 border border-slate-200 rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-slate-300"
         >
           {/* Image section of the card */}
-          <img
-            className="h-[100px] w-[100px] mx-auto object-cover rounded-md"
-            src={card.image}
-            alt={card.description}
-          />
+          <div className="relative overflow-hidden rounded-lg border border-white">
+            <div
+              className={`h-40 w-full bg-gradient-to-br ${card.accent} flex items-center justify-center`}
+            >
+              <Icon className="h-14 w-14 drop-shadow-sm" />
+            </div>
+            <div className="absolute top-3 right-3 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">
+              {card.tag}
+            </div>
+          </div>
           {/* Description section of the card */}
-          <p className="pt-2">{card.description}</p>
+          <div className="pt-4">
+            <h3 className="text-lg font-semibold">{card.title}</h3>
+            <p className="text-sm text-slate-600 mt-1">{card.result}</p>
+          </div>
         </div>
-      ))}
+      );
+      })}
     </div>
   );
 };

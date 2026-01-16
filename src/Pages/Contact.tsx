@@ -9,12 +9,12 @@ export default function Contact() {
 
   return (
     // Main section for the Contact component
-    <section id="contact" className="pb-6 bg-black">
+    <section id="contact" className="pb-6 bg-[#f8f5f2]">
       <div className="max-w-3xl mx-auto px-6">
         {/* Section heading with a call-to-action */}
         <h2 className="text-3xl font-semibold mb-6 text-center">
           Have a project in mind?{" "}
-          <span className="text-indigo-300">Let's talk!</span>
+          <span className="text-emerald-600">Let's talk!</span>
         </h2>
         {/* Contact form */}
         <form
@@ -22,16 +22,21 @@ export default function Contact() {
           onSubmit={handleSubmit}
         >
           {/* Input field for email */}
+          <label className="sr-only" htmlFor="contact-email">
+            Email
+          </label>
           <input
+            id="contact-email"
+            name="email"
             type="email"
-            className="w-[300px] p-3 bg-slate-900/45 border border-slate-600 rounded-lg text-slate-300 hover:bg-slate-500/30 hover:text-white"
+            className="w-[300px] p-3 bg-white border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             placeholder="Email"
             required
           />
           <div className="text-center">
             {/* Submit button */}
             <button
-              className="px-6 py-3 bg-slate-800/50 text-white rounded-md"
+              className="px-6 py-3 bg-slate-900 text-white rounded-md transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-200/70"
               type="submit"
             >
               Send

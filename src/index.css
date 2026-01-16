@@ -1,7 +1,7 @@
 :root {
-  --background: 14 14% 6%; /* fallback HSL for theme mapping */
-  --foreground: 220 14% 92%; /* Text color */
-  --primary: 245 84% 67%; /* Primary action color */
+  --background: 35 40% 96%; /* warm light base */
+  --foreground: 215 20% 15%; /* dark text */
+  --primary: 24 95% 50%; /* accent */
 }
 
 @tailwind base;
