@@ -32,7 +32,7 @@ export default function Navigation() {
           className="md:hidden text-white text-3xl"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toogle navigation menu"
-        >
+          >
           ☰
         </button>
       </div>

@@ -122,7 +122,7 @@ export default function Hero() {
             type="button"
             onClick={() =>
               document
-                .getElementById("contact")
+                .getElementById("portfolio")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             className="inline-flex items-center border border-slate-900 bg-slate-500/20 px-6 py-3 rounded-md text-white hover:bg-slate-500/30 hover:text-white
