@@ -44,7 +44,7 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-4 text-white">Company</h3>
           <ul>
             {CompanyLinks.map((link) => (
-              <li key={link.id}>
+              <li key={link.id}>   
                 <a href="#" className="text-gray-400 hover:text-white">
                   {link.title}
                 </a>

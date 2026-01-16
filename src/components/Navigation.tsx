@@ -9,7 +9,7 @@ export default function Navigation() {
   return (
     // Header section containing the navigation bar
     <header className="shadow-sm mb-5">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl text-2xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo or brand name */}
         <div className="text-3xl font-bold">BETTERSHIP</div>
         {/* Desktop navigation menu */}

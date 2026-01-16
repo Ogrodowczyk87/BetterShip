@@ -34,6 +34,7 @@ export default function Features() {
             { title: "Accessibility" },
             { title: "SEO optimization" },
             { title: "Responsive design" },
+            { title: "Customizable" },
           ].map((f, i) => (
             <div
               key={i}
