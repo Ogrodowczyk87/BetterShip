@@ -29,7 +29,7 @@ const techLogos = [
 export default function Hero() {
   return (
     // Main section for the Hero component
-    <section className="relative overflow-hidden py-5">
+    <section className="relative overflow-hidden py-5 bg-transparent text-slate-900">
       {/* Navigation bar */}
       <Navigation />
 
@@ -40,7 +40,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
               We Build modern web applications.
             </h1>
-            <p className="text-3xl text-slate-700 mb-12">
+            <p className="text-3xl text-slate-600 mb-12">
               Get a quote, communicate contact, and start your project today.
             </p>
           </div>       
@@ -106,8 +106,8 @@ export default function Hero() {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="inline-flex items-center border border-slate-900 bg-slate-900 px-6 py-3 rounded-md text-white transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-200/70
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
+            className="inline-flex items-center border border-blue-600 bg-blue-600 px-6 py-3 rounded-md text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200/70
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
           >
             Get a quote
           </button>
@@ -118,8 +118,8 @@ export default function Hero() {
                 .getElementById("portfolio")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="inline-flex items-center border border-slate-300 bg-white px-6 py-3 rounded-md text-slate-900 transition-all duration-300 hover:bg-amber-50 hover:border-amber-200 hover:shadow-lg hover:shadow-amber-100/70
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
+            className="inline-flex items-center border border-blue-600 bg-white px-6 py-3 rounded-md text-blue-700 transition-all duration-300 hover:bg-blue-50 hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
           >
             View Portfolio
           </button>

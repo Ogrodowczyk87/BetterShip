@@ -41,9 +41,9 @@ export default function Features() {
           ].map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-1 p-4 border h-[52px] w-[150px] border-slate-200 bg-white/80 px-6 py-3 rounded-md text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg hover:border-emerald-200 box-content"
+              className="flex items-center gap-1 p-4 border h-[52px] w-[150px] border-slate-200 bg-white/80 px-6 py-3 rounded-md text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg hover:border-blue-200 box-content"
             >
-              <IoMdCheckmark className="w-5 h-5 mr-1 shrink-0 text-emerald-600" />
+              <IoMdCheckmark className="w-5 h-5 mr-1 shrink-0 text-blue-600" />
               <h3 className="font-semibold leading-none">{f.title}</h3>
             </div>
           ))}

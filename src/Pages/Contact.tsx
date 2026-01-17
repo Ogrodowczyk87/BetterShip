@@ -14,7 +14,7 @@ export default function Contact() {
         {/* Section heading with a call-to-action */}
         <h2 className="text-3xl font-semibold mb-6 text-center">
           Have a project in mind?{" "}
-          <span className="text-emerald-600">Let's talk!</span>
+          <span className="text-blue-600">Let's talk!</span>
         </h2>
         {/* Contact form */}
         <form
@@ -29,14 +29,14 @@ export default function Contact() {
             id="contact-email"
             name="email"
             type="email"
-            className="w-[300px] p-3 bg-white border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-[300px] p-3 bg-white border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Email"
             required
           />
           <div className="text-center">
             {/* Submit button */}
             <button
-              className="px-6 py-3 bg-slate-900 text-white rounded-md transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-200/70"
+              className="px-6 py-3 bg-blue-600 text-white rounded-md transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200/70"
               type="submit"
             >
               Send

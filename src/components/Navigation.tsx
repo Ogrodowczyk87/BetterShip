@@ -8,22 +8,22 @@ export default function Navigation() {
 
   return (
     // Header section containing the navigation bar
-    <header className="bg-white/70 backdrop-blur border-b border-slate-200 mb-5">
+    <header className=" backdrop-blur border-b border-slate-200 mb-5">
       <div className="max-w-6xl text-2xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo or brand name */}
         <div className="text-3xl font-bold">BETTERSHIP</div>
         {/* Desktop navigation menu */}
         <nav className="space-x-4 text-2xl hidden md:flex md:mr-8">
-          <a href="#services" className="text-slate-700 hover:text-amber-600">
+          <a href="#services" className="text-slate-700 hover:text-blue-600">
             Services
           </a>
-          <a href="#features" className="text-slate-700 hover:text-amber-600">
+          <a href="#features" className="text-slate-700 hover:text-blue-600">
             Features
           </a>
-          <a href="#portfolio" className="text-slate-700 hover:text-amber-600">
+          <a href="#portfolio" className="text-slate-700 hover:text-blue-600">
             Portfolio
           </a>
-          <a href="#contact" className="text-slate-700 hover:text-amber-600">
+          <a href="#contact" className="text-slate-700 hover:text-blue-600">
             Contact
           </a>
         </nav>
