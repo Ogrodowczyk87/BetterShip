@@ -1,6 +1,5 @@
 // Import React library
 import React from "react";
-import { IoStar } from "react-icons/io5";
 
 // Define the Testimonial component
 export default function Testimonial() {
@@ -9,48 +8,13 @@ export default function Testimonial() {
     <section className="py-16 bg-[#f8f5f2]">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading for the testimonial section */}
-        <h2 className="text-5xl font-semibold mb-6">What clients say</h2>
-        {/* Blockquote for the client testimonial */}
-        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-200">
-          "This product changed our business." — Client
-          <div className="flex mt-2 mb-4 content-center">
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500" />
-                    </div>
-        </blockquote>
-        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-200">
-          "Amazing service!" — Client
-          <div className="flex mt-2 mb-4 content-center">
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500 mr-1" />
-                      <IoStar className="text-yellow-500" />
-                    </div>
-        </blockquote>
-        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-200">
-          "Exceptional quality!" — Client
-          <div className="flex mt-2 mb-4 content-center">
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500" />
-          </div>
-        </blockquote>
-        <blockquote className="bg-white/85 border border-slate-200 p-6 mb-4 rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-200">
-          "Highly recommend to everyone!" — Client
-          <div className="flex mt-2 mb-4 content-center">
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500 mr-1" />
-            <IoStar className="text-yellow-500" />
-          </div>
-        </blockquote>
+        <h2 className="text-5xl font-semibold mb-6">Client feedback</h2>
+        <div className="bg-white/85 border border-slate-200 p-6 rounded-lg shadow-sm">
+          <p className="text-lg text-slate-700">
+            Real testimonials and case studies will appear here once new projects
+            ship. In the meantime, check the portfolio section for selected work.
+          </p>
+        </div>
       </div>
     </section>
   );

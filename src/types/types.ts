@@ -6,9 +6,6 @@ export type ServiceCard = {
   description: string;
   Icon: JSX.Element;
 };
-export type ServicesCards = {
-  cards: ServiceCard[];
-};
 
 export type PortfolioCard = {
   id: number;
@@ -18,6 +15,10 @@ export type PortfolioCard = {
   Icon: ComponentType<{ className?: string }>;
   accent: string;
 };
-export type PortfolioCards = {
-  cards: PortfolioCard[];
+
+export type FooterLink = {
+  id: number;
+  title: string;
+  href: string;
+  external?: boolean;
 };

@@ -1,32 +1,7 @@
 // Import necessary libraries and types
 import React from "react";
-import { ServiceCard } from "../types/types";
-import { SiAmp } from "react-icons/si";
-import { GiArrowsShield } from "react-icons/gi";
-import { GiCharging } from "react-icons/gi";
-
-// Define an array of service cards with their respective icons, titles, and descriptions
-export const cards = [
-  {
-    id: 1,
-    Icon: <SiAmp className="w-12 h-12" />,
-    title: "MVP",
-    description:
-      "Development of Minimum Viable Product to validate your idea quickly.",
-  },
-  {
-    id: 2,
-    Icon: <GiArrowsShield className="w-12 h-12" />,
-    title: "Audi & Consulting",
-    description: "Short description about Audi & Consulting service.",
-  },
-  {
-    id: 3,
-    Icon: <GiCharging className="w-12 h-12" />,
-    title: "Maintenance",
-    description: "Short description about Maintenance service.",
-  },
-];
+import type { ServiceCard } from "../types/types";
+import { serviceCards } from "../data/services";
 
 // Define the ServicesCards component
 export const ServicesCards = () => {
@@ -34,7 +9,7 @@ export const ServicesCards = () => {
     // Container for the service cards
     <div className="flex flex-wrap justify-center gap-6 items-stretch ">
       {/* Map through the cards array and render each service card */}
-      {cards.map((card: ServiceCard) => (
+      {serviceCards.map((card: ServiceCard) => (
         <div
           key={card.id}
           className="flex flex-row py-6 px-6 bg-white/85 border border-slate-200 rounded-lg shadow text-center h-82 w-[305px] shrink-0 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:border-blue-200"

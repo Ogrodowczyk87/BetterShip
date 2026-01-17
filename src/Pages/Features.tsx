@@ -17,6 +17,8 @@ export default function Features() {
           <img
             src={Image}
             alt="Peter Graff"
+            width={90}
+            height={90}
             className="w-[90px] h-[90px] mb-6 rounded-full"
           />
           <h4 className="text-2xl">Peter Graff</h4>

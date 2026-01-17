@@ -99,30 +99,20 @@ export default function Hero() {
 
         <nav className="flex justify-start gap-4 mb-28">
           {/* Buttons for navigation */}
-          <button
-            type="button"
-            onClick={() =>
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
+          <a
+            href="#contact"
             className="inline-flex items-center border border-blue-600 bg-blue-600 px-6 py-3 rounded-md text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200/70
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
           >
             Get a quote
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
+          </a>
+          <a
+            href="#portfolio"
             className="inline-flex items-center border border-blue-600 bg-white px-6 py-3 rounded-md text-blue-700 transition-all duration-300 hover:bg-blue-50 hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
           >
             View Portfolio
-          </button>
+          </a>
         </nav>
 
         {/* Logo loop showcasing technology partners */}
