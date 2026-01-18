@@ -45,50 +45,50 @@ export default function Hero() {
             </p>
           </div>       
           <aside
-            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-white border border-slate-200
-          rounded-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
+            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-slate-900 border border-slate-800
+          rounded-lg w-[420px] md:w-[670px] h-[300px] md:h-auto text-slate-100"
           >
             {/* Terminal-like UI with a code snippet */}
-            <div className="terminal-header pb-4 ">
-              <span className="bg-red-600 h-[12px] w-[12px] rounded-full inline-block ml-2 mr-2"></span>
-              <span className="bg-yellow-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
-              <span className="bg-green-500 h-[12px] w-[12px] rounded-full inline-block mr-2"></span>
-              <span className="ml-4">App.Jox</span>
-              <span className="ml-4 text-slate-500">22:10</span>
+            <div className="terminal-header pb-4 text-slate-300">
+              <span className="bg-red-500/80 h-[10px] w-[10px] rounded-full inline-block ml-2 mr-2"></span>
+              <span className="bg-amber-400/80 h-[10px] w-[10px] rounded-full inline-block mr-2"></span>
+              <span className="bg-emerald-400/80 h-[10px] w-[10px] rounded-full inline-block mr-2"></span>
+              <span className="ml-4 text-sm">App.Jox</span>
+              <span className="ml-4 text-slate-500 text-sm">22:10</span>
             </div>
-            <div className="grid grid-cols-1 terminal-body pl-2 pr-2 overflow-x-hidden">
+            <div className="grid grid-cols-1 terminal-body pl-2 pr-2 overflow-x-hidden font-mono">
               <div>
                 <pre>
-                  <code className="text-[10px]">
+                  <code className="text-[10px] text-slate-200">
                     {`const `}
-                    <span className="text-blue-400">fetchData</span>
+                    <span className="text-sky-300">fetchData</span>
                     {` = async () => {
     `}
-                    <span className="text-yellow-400">console</span>
+                    <span className="text-amber-300">console</span>
                     {`.`}
-                    <span className="text-purple-400">log</span>
+                    <span className="text-rose-300">log</span>
                     {`("Fetching data from API...");
     const `}
-                    <span className="text-green-400">response</span>
+                    <span className="text-emerald-300">response</span>
                     {` = await `}
-                    <span className="text-yellow-400">fetch</span>
+                    <span className="text-amber-300">fetch</span>
                     {`("https://api.BETTERSHIP.com/data");
     const `}
-                    <span className="text-green-400">data</span>
+                    <span className="text-emerald-300">data</span>
                     {` = await `}
-                    <span className="text-green-400">response</span>
+                    <span className="text-emerald-300">response</span>
                     {`.json();
     `}
-                    <span className="text-yellow-400">console</span>
+                    <span className="text-amber-300">console</span>
                     {`.`}
-                    <span className="text-purple-400">log</span>
+                    <span className="text-rose-300">log</span>
                     {`("Data received:", `}
-                    <span className="text-green-400">data</span>
+                    <span className="text-emerald-300">data</span>
                     {`);
   };
 
   `}
-                    <span className="text-green-400">fetchData</span>
+                    <span className="text-emerald-300">fetchData</span>
                     {`();`}
                   </code>
                 </pre>
