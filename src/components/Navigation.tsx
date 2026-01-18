@@ -17,11 +17,14 @@ export default function Navigation() {
           <a href="#services" className="text-slate-700 hover:text-blue-600">
             Services
           </a>
+          <a href="#process" className="text-slate-700 hover:text-blue-600">
+            Process
+          </a>
           <a href="#features" className="text-slate-700 hover:text-blue-600">
             Features
           </a>
           <a href="#portfolio" className="text-slate-700 hover:text-blue-600">
-            Portfolio
+            Case Studies
           </a>
           <a href="#contact" className="text-slate-700 hover:text-blue-600">
             Contact
@@ -42,16 +45,19 @@ export default function Navigation() {
       {isOpen && (
         <nav
           id="mobile-navigation"
-          className="md:hidden bg-[#f8f5f2] text-slate-900 text-3xl space-y-2 px-6 py-4 flex flex-col items-center justify-center border-t border-slate-200"
+          className="md:hidden bg-white text-slate-900 text-3xl space-y-2 px-6 py-4 flex flex-col items-center justify-center border-t border-slate-200"
         >
           <a href="#services" className="block text-slate-900">
             Services
+          </a>
+          <a href="#process" className="block text-slate-900">
+            Process
           </a>
           <a href="#features" className="block text-slate-900">
             Features
           </a>
           <a href="#portfolio" className="block text-slate-900">
-            Portfolio
+            Case Studies
           </a>
           <a href="#contact" className="block text-slate-900">
             Contact

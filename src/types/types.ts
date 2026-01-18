@@ -16,6 +16,20 @@ export type PortfolioCard = {
   accent: string;
 };
 
+export type CaseStudy = {
+  id: number;
+  title: string;
+  industry: string;
+  summary: string;
+  problem: string;
+  process: string;
+  result: string;
+  metrics: {
+    label: string;
+    value: string;
+  }[];
+};
+
 export type FooterLink = {
   id: number;
   title: string;

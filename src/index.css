@@ -1,5 +1,5 @@
 :root {
-  --background: 35 40% 96%; /* warm light base */
+  --background: 0 0% 100%; /* white base */
   --foreground: 215 20% 15%; /* dark text */
   --primary: 24 95% 50%; /* accent */
 }

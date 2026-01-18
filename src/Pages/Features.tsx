@@ -8,7 +8,7 @@ import { IoMdCheckmark } from "react-icons/io";
 export default function Features() {
   return (
     // Main section for the Features component
-    <section id="features" className="bg-[#f8f5f2] pb-[38px]">
+    <section id="features" className="bg-white pb-[38px]">
       {/* Section heading */}
       <h2 className="text-3xl font-bold mb-12 text-center">Our Features</h2>
       <div className="grid grid-cols-2 max-w-6xl mx-auto px-6">
@@ -43,7 +43,7 @@ export default function Features() {
           ].map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-1 p-4 border h-[52px] w-[150px] border-slate-200 bg-white/80 px-6 py-3 rounded-md text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg hover:border-blue-200 box-content"
+              className="flex items-center gap-1 p-4 border h-[52px] w-[150px] border-slate-200 bg-white px-6 py-3 rounded-md text-slate-900 transition-colors duration-300 hover:bg-slate-50 hover:border-slate-300 box-content"
             >
               <IoMdCheckmark className="w-5 h-5 mr-1 shrink-0 text-blue-600" />
               <h3 className="font-semibold leading-none">{f.title}</h3>

@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     // Main section for the Contact component
-    <section id="contact" className="pb-6 bg-[#f8f5f2]">
+    <section id="contact" className="pb-6 bg-white">
       <div className="max-w-3xl mx-auto px-6">
         {/* Section heading with a call-to-action */}
         <h2 className="text-3xl font-semibold mb-6 text-center">

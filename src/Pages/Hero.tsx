@@ -38,15 +38,15 @@ export default function Hero() {
           <div>
             {/* Main heading and description */}
             <h1 className="text-4xl md:text-6xl font-extrabold mb-12">
-              We Build modern web applications.
+              We <span className="text-blue-400">Build</span> modern web <span className="text-blue-400">applications</span>.
             </h1>
             <p className="text-3xl text-slate-600 mb-12">
               Get a quote, communicate contact, and start your project today.
             </p>
           </div>       
           <aside
-            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-white/80 border border-slate-200 hover:bg-white
-          rounded-lg shadow-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
+            className="hidden md:block terminal pt-4 ml-2 pl-2 bg-white border border-slate-200
+          rounded-lg w-[420px] md:w-[670px] h-[300px] md:h-auto"
           >
             {/* Terminal-like UI with a code snippet */}
             <div className="terminal-header pb-4 ">
@@ -102,16 +102,16 @@ export default function Hero() {
           <a
             href="#contact"
             className="inline-flex items-center border border-blue-600 bg-blue-600 px-6 py-3 rounded-md text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200/70
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             Get a quote
           </a>
           <a
             href="#portfolio"
-            className="inline-flex items-center border border-blue-600 bg-white px-6 py-3 rounded-md text-blue-700 transition-all duration-300 hover:bg-blue-50 hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8f5f2]"
+            className="inline-flex items-center border border-blue-600 bg-white px-6 py-3 rounded-md text-blue-700 transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-200/70
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
-            View Portfolio
+            View Case Studies
           </a>
         </nav>
 

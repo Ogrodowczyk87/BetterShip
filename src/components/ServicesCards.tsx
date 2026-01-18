@@ -12,7 +12,7 @@ export const ServicesCards = () => {
       {serviceCards.map((card: ServiceCard) => (
         <div
           key={card.id}
-          className="flex flex-row py-6 px-6 bg-white/85 border border-slate-200 rounded-lg shadow text-center h-82 w-[305px] shrink-0 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:border-blue-200"
+          className="flex flex-row py-6 px-6 bg-white border border-slate-200 rounded-lg text-center h-82 w-[305px] shrink-0 transition-colors duration-300 hover:bg-slate-50 hover:border-slate-300"
         >
           {/* Icon section of the card */}
           <div className="flex items-center justify-center mr-[20px]">

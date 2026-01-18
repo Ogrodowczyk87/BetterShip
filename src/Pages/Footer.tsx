@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     // Footer section with background and text styling
-    <footer className="bg-[#f8f5f2] text-slate-700 py-8 border-t border-slate-200">
+    <footer className="bg-white text-slate-700 py-8 border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         <div>
           {/* Company links section */}
